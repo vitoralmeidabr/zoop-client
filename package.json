@@ -38,7 +38,7 @@
     "node": ">=14"
   },
   "dependencies": {
-    "@alibsoft/zoop": "^0.1.0",
+    "@alibsoft/zoop": "^1.0.8",
     "@types/qs": "^6.9.7",
     "axios": "^0.23.0",
     "axios-form-data": "^1.0.0",
