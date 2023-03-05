@@ -5,7 +5,10 @@
   "main": "build/src/index.js",
   "typings": "build/src/index.d.ts",
   "types": "build/src/index.d.ts",
-  "repository": "https://github.com/vitoralmeidabr/zoop-client",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vitoralmeidabr/zoop-client.git"
+  },
   "license": "MIT",
   "keywords": [],
   "scripts": {
@@ -109,5 +112,13 @@
   },
   "jest": {
     "verbose": true
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/vitoralmeidabr/zoop-client/issues"
+  },
+  "homepage": "https://github.com/vitoralmeidabr/zoop-client#readme",
+  "directories": {
+    "test": "tests"
+  },
+  "author": "amonlibanio"
 }
