@@ -12,7 +12,7 @@ export declare const updateSubscription: (marketplace: IMarketplace, subscriptio
 /**
  * Listar os detalhes de uma assinatura pelo identificador
  */
-export declare const getSubscriptions: (marketplace: IMarketplace, query?: IQuery) => Promise<import("axios").AxiosResponse<IResponse<ISubscription>, unknown>>;
+export declare const getSubscriptions: (marketplace: IMarketplace, query?: IQuery | undefined) => Promise<import("axios").AxiosResponse<IResponse<ISubscription>, unknown>>;
 /**
  * Listar detalhes de plano de venda
  */

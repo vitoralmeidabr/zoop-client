@@ -11,4 +11,4 @@ export declare const getReceivableByTransaction: (marketplace: IMarketplace, tra
 /**
  * Listar recebíveis por seller
  */
-export declare const getReceivableBySeller: (marketplace: IMarketplace, sellerId: string, query?: IReceivableQuery) => Promise<import("axios").AxiosResponse<IReceivable, unknown>>;
+export declare const getReceivableBySeller: (marketplace: IMarketplace, sellerId: string, query?: IReceivableQuery | undefined) => Promise<import("axios").AxiosResponse<IReceivable, unknown>>;

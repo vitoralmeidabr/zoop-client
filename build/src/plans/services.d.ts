@@ -8,7 +8,7 @@ export declare const createPlan: (marketplace: IMarketplace, body: IPlan) => Pro
 /**
  * Listar plano de vendas por marketplace
  */
-export declare const getPlans: (marketplace: IMarketplace, query?: IQuery) => Promise<import("axios").AxiosResponse<IResponse<IPlan>, unknown>>;
+export declare const getPlans: (marketplace: IMarketplace, query?: IQuery | undefined) => Promise<import("axios").AxiosResponse<IResponse<IPlan>, unknown>>;
 /**
  * Listar detalhes de plano de venda
  */

@@ -8,11 +8,11 @@ export declare const getSeller: (marketplace: IMarketplace, sellerId: string) =>
 /**
  * Search Seller Individuals | Business
  */
-export declare const searchSeller: (marketplace: IMarketplace, query?: ISearch) => Promise<import("axios").AxiosResponse<ISeller | IBusiness, unknown>>;
+export declare const searchSeller: (marketplace: IMarketplace, query?: ISearch | undefined) => Promise<import("axios").AxiosResponse<ISeller | IBusiness, unknown>>;
 /**
  * Get Seller Individuals | Business
  */
-export declare const getSellers: (marketplace: IMarketplace, query?: IQuery) => Promise<import("axios").AxiosResponse<IResponse<ISeller | IBusiness>, unknown>>;
+export declare const getSellers: (marketplace: IMarketplace, query?: IQuery | undefined) => Promise<import("axios").AxiosResponse<IResponse<ISeller | IBusiness>, unknown>>;
 /**
  * Delete Seller Individuals | Business
  */
@@ -20,7 +20,7 @@ export declare const deleteSeller: (marketplace: IMarketplace, sellerId: string)
 /**
  * Get Seller Individuals | Business
  */
-export declare const getDocuments: (marketplace: IMarketplace, sellerId: string, query?: IQuery) => Promise<import("axios").AxiosResponse<IResponse<IDocument>, unknown>>;
+export declare const getDocuments: (marketplace: IMarketplace, sellerId: string, query?: IQuery | undefined) => Promise<import("axios").AxiosResponse<IResponse<IDocument>, unknown>>;
 /**
  * Download Seller Document
  */

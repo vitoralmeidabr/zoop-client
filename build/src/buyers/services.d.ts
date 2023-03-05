@@ -9,7 +9,7 @@ export declare const getBuyer: (marketplace: IMarketplace, buyerId: string) => P
 /**
  * Get All Buyers
  */
-export declare const getBuyers: (marketplace: IMarketplace, query?: IQuery) => Promise<import("axios").AxiosResponse<IResponse<IBuyer>, unknown>>;
+export declare const getBuyers: (marketplace: IMarketplace, query?: IQuery | undefined) => Promise<import("axios").AxiosResponse<IResponse<IBuyer>, unknown>>;
 /**
  * Delete Buyer
  */
@@ -17,7 +17,7 @@ export declare const deleteBuyer: (marketplace: IMarketplace, buyerId: string) =
 /**
  * Search Seller Individuals | Business
  */
-export declare const searchBuyer: (marketplace: IMarketplace, query?: ISearchBuyer) => Promise<import("axios").AxiosResponse<IBuyer, unknown>>;
+export declare const searchBuyer: (marketplace: IMarketplace, query?: ISearchBuyer | undefined) => Promise<import("axios").AxiosResponse<IBuyer, unknown>>;
 /**
  * Create Buyer
  */
