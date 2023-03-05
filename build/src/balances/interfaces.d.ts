@@ -8,9 +8,14 @@ export interface IBalanceQuery extends IQuery {
     readonly 'created_date_range[lte]': string;
 }
 export interface IBalance {
-    readonly current_balance: string;
-    readonly current_blocked_balance: string;
-    readonly account_balance: string;
+    readonly resource?: string;
+    readonly uri?: string;
+    readonly items?: IBalanceItems;
+}
+export interface IBalanceItems {
+    readonly current_balance?: string;
+    readonly current_blocked_balance?: string;
+    readonly account_balance?: string;
 }
 export interface IHistoryBalance {
     readonly currentBalance?: string;

@@ -30,6 +30,7 @@ __exportStar(require("./prepayments"), exports);
 __exportStar(require("./receipts"), exports);
 __exportStar(require("./receivables"), exports);
 __exportStar(require("./sellers"), exports);
+__exportStar(require("./split"), exports);
 __exportStar(require("./subscriptions"), exports);
 __exportStar(require("./terminals"), exports);
 __exportStar(require("./tokens"), exports);
@@ -38,4 +39,4 @@ __exportStar(require("./transfers"), exports);
 __exportStar(require("./users"), exports);
 __exportStar(require("./utils"), exports);
 __exportStar(require("./webhook"), exports);
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7OztBQUFBLGdEQUE4QjtBQUM5Qiw2Q0FBMEI7QUFDMUIsZ0RBQTZCO0FBQzdCLDRDQUF5QjtBQUN6QiwyQ0FBd0I7QUFDeEIsMkNBQXdCO0FBQ3hCLDBDQUF1QjtBQUN2QiwyQ0FBd0I7QUFDeEIsd0NBQXFCO0FBQ3JCLDZDQUEwQjtBQUMxQixnREFBNkI7QUFDN0IsMENBQXVCO0FBQ3ZCLGdEQUE2QjtBQUM3Qiw2Q0FBMEI7QUFDMUIsZ0RBQTZCO0FBQzdCLDRDQUF5QjtBQUN6QixrREFBK0I7QUFDL0IsOENBQTJCO0FBQzNCLDJDQUF3QjtBQUN4QixpREFBOEI7QUFDOUIsOENBQTJCO0FBQzNCLDBDQUF1QjtBQUN2QiwwQ0FBdUI7QUFDdkIsNENBQXlCIn0=
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7OztBQUFBLGdEQUE4QjtBQUM5Qiw2Q0FBMEI7QUFDMUIsZ0RBQTZCO0FBQzdCLDRDQUF5QjtBQUN6QiwyQ0FBd0I7QUFDeEIsMkNBQXdCO0FBQ3hCLDBDQUF1QjtBQUN2QiwyQ0FBd0I7QUFDeEIsd0NBQXFCO0FBQ3JCLDZDQUEwQjtBQUMxQixnREFBNkI7QUFDN0IsMENBQXVCO0FBQ3ZCLGdEQUE2QjtBQUM3Qiw2Q0FBMEI7QUFDMUIsZ0RBQTZCO0FBQzdCLDRDQUF5QjtBQUN6QiwwQ0FBdUI7QUFDdkIsa0RBQStCO0FBQy9CLDhDQUEyQjtBQUMzQiwyQ0FBd0I7QUFDeEIsaURBQThCO0FBQzlCLDhDQUEyQjtBQUMzQiwwQ0FBdUI7QUFDdkIsMENBQXVCO0FBQ3ZCLDRDQUF5QiJ9

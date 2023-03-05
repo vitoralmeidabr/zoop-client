@@ -25,7 +25,7 @@ Axios.interceptors.request.use(
 // Add a response interceptor
 Axios.interceptors.response.use(
   (response) => {
-    if (response.status >= 200 && response.status < 400) resLog(response);
+    resLog(response);
     return response.status >= 200 && response.status < 400
       ? response
       : Promise.reject(response.data);

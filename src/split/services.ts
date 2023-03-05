@@ -1,4 +1,5 @@
 import { IMarketplace } from '../marketplace';
+import { ISplitTransaction } from '../transactions';
 
 import {
   ISplitGrossValue,
@@ -21,7 +22,7 @@ const createSplitByTransaction = (
     | ISplitPercentage
     | ISplitRecipientPercentage
 ) => {
-  return marketplace.post(`transactions/${transactionId}/split_rules`, body);
+  return marketplace.post<ISplitTransaction, any>(`transactions/${transactionId}/split_rules`, body);
 };
 /**
  * Criar Split por valor ou Percentagem taxas do seller (principal)

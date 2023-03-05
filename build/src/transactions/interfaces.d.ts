@@ -1,7 +1,6 @@
 import { IBoleto } from '../boletos';
 import { IEnty, IMetadata, IQuery, PaymentType } from '../common';
 import { IFeeDetails } from '../plans';
-import { ISplitGrossValue, ISplitPercentage, ISplitRecipientPercentage, ISplitRecipientValue, ISplitValue } from '../split';
 import { ICard } from '../tokens';
 /**
  * Response Transaction
@@ -125,8 +124,24 @@ export interface ISource extends ICurrency {
 export interface IInstallment {
     readonly number_installments?: number;
 }
+export interface ISplitRule {
+    readonly id?: string;
+    readonly resource?: string;
+    readonly transaction?: string;
+    readonly recipient?: string;
+    readonly liable?: boolean;
+    readonly charge_processing_fee?: boolean | string;
+    readonly charge_recipient_processing_fee?: boolean | string;
+    readonly percentage?: number;
+    readonly amount?: number;
+    readonly is_gross_amount?: boolean;
+    readonly receivable_amount?: number;
+    readonly receivable_gross_amount?: number;
+    readonly created_at?: string;
+    readonly updated_at?: string;
+}
 export interface ISplitTransaction {
-    readonly split_rules?: readonly ISplitValue[] | readonly ISplitPercentage[] | readonly ISplitRecipientValue[] | readonly ISplitRecipientPercentage[] | readonly ISplitGrossValue[];
+    readonly split_rules?: readonly ISplitRule[];
 }
 export interface ICapture {
     readonly statement_descriptor?: string;
