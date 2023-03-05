@@ -22,7 +22,7 @@ const createSplitByTransaction = (
     | ISplitPercentage
     | ISplitRecipientPercentage
 ) => {
-  return marketplace.post<ISplitTransaction, any>(`transactions/${transactionId}/split_rules`, body);
+  return marketplace.post<ISplitTransaction, any>(`/transactions/${transactionId}/split_rules`, body);
 };
 /**
  * Criar Split por valor ou Percentagem taxas do seller (principal)
@@ -74,7 +74,7 @@ export const getSplitByTransaction = (
   splitId: string
 ) => {
   return marketplace.get(
-    `transactions/${transactionId}/split_rules/${splitId}`
+    `/transactions/${transactionId}/split_rules/${splitId}`
   );
 };
 /**
@@ -84,7 +84,7 @@ export const getSplitRulesByTransaction = (
   marketplace: IMarketplace,
   transactionId: string
 ) => {
-  return marketplace.get(`transactions/${transactionId}/split_rules`);
+  return marketplace.get(`/transactions/${transactionId}/split_rules`);
 };
 /**
  * Alterar Split por transação
@@ -101,7 +101,7 @@ export const updateSplitByTransaction = (
     | ISplitRecipientPercentage
 ) => {
   return marketplace.put(
-    `transactions/${transactionId}/split_rules/${splitId}`,
+    `/transactions/${transactionId}/split_rules/${splitId}`,
     body
   );
 };
@@ -114,6 +114,6 @@ export const deleteSplitByTransaction = (
   splitId: string
 ) => {
   return marketplace.delete(
-    `transactions/${transactionId}/split_rules/${splitId}`
+    `/transactions/${transactionId}/split_rules/${splitId}`
   );
 };
