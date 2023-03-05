@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.12](https://github.com/vitoralmeidabr/zoop-client/compare/v1.0.11...v1.0.12) (2023-03-05)
+
+
+### Bug Fixes
+
+* adjusting ISubscription property type ([7cbfd20](https://github.com/vitoralmeidabr/zoop-client/commit/7cbfd20215edca1aa51141bda566070bcd2fe8e3))
+
 ### 1.0.11 (2023-03-05)
 
 
