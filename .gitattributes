@@ -1,0 +1,110 @@
+* text=auto
+
+###### Git
+.gitattributes text
+.gitignore text
+.gitconfig text
+.gitmodules text
+
+##### Language
+# PHP
+*.php text eol=lf diff=php
+*.phpt text eol=lf
+*.phtml text eol=lf
+*.twig text eol=lf
+.htaccess text eol=lf
+.ht text eol=lf
+*.phar binary eol=lf -diff
+
+##### Windows
+*.bat text eol=crlf
+*.exe binary
+*.dll binary
+
+##### Linux
+*.sh text eol=lf
+*.so binary
+
+##### Global
+# Documents
+*.sql text
+*.md text eol=lf
+*.adoc text
+*.textile text
+*.mustache text
+*.csv text
+*.tab text
+*.tsv text
+*.coffee text
+*.css text
+*.htm text
+*.html text
+*.xhtml text
+*.inc text
+*.js text
+*.jsx text
+*.less text
+*.od text
+*.onlydata text
+*.sass text
+*.scm text
+*.log text
+*.properties text
+*.scss text
+*.styl text
+*.tag text
+*.ts text
+*.tsx text
+*.dockerignore text
+Dockerfile text
+*.markdown text
+*.mdwn text
+*.mdown text
+*.mkd text
+*.mkdn text
+*.mdtxt text
+*.mdtext text
+*.txt text
+AUTHORS text
+CHANGELOG text
+CHANGES text
+CONTRIBUTING text
+COPYING text
+copyright text
+*COPYRIGHT* text
+INSTALL text
+license text
+LICENSE text
+NEWS text
+readme text
+*README* text
+TODO text
+
+# Configuration
+*.cnf text
+*.cfg text
+*.conf text
+*.config text
+*.ini text
+*.json text eol=lf
+*.xml text
+*.bowerrc text
+.browserslistrc text
+.editorconfig text
+*.npmignore text
+*.yaml text
+*.yml text
+browserslist text
+Makefile text
+makefile text
+Procfile text
+.slugignore text
+
+# Linters
+.csslintrc text
+.eslintrc text
+.htmlhintrc text
+.jscsrc text
+.jshintrc text
+.jshintignore text
+.stylelintrc text
