@@ -1,7 +1,11 @@
 "use strict";
 var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
     if (k2 === undefined) k2 = k;
-    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
+    var desc = Object.getOwnPropertyDescriptor(m, k);
+    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+      desc = { enumerable: true, get: function() { return m[k]; } };
+    }
+    Object.defineProperty(o, k2, desc);
 }) : (function(o, m, k, k2) {
     if (k2 === undefined) k2 = k;
     o[k2] = m[k];
@@ -26,7 +30,6 @@ __exportStar(require("./prepayments"), exports);
 __exportStar(require("./receipts"), exports);
 __exportStar(require("./receivables"), exports);
 __exportStar(require("./sellers"), exports);
-__exportStar(require("./split"), exports);
 __exportStar(require("./subscriptions"), exports);
 __exportStar(require("./terminals"), exports);
 __exportStar(require("./tokens"), exports);
@@ -35,4 +38,4 @@ __exportStar(require("./transfers"), exports);
 __exportStar(require("./users"), exports);
 __exportStar(require("./utils"), exports);
 __exportStar(require("./webhook"), exports);
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7O0FBQUEsZ0RBQThCO0FBQzlCLDZDQUEyQjtBQUMzQixnREFBOEI7QUFDOUIsNENBQTBCO0FBQzFCLDJDQUF5QjtBQUN6QiwyQ0FBeUI7QUFDekIsMENBQXdCO0FBQ3hCLDJDQUF5QjtBQUN6Qix3Q0FBc0I7QUFDdEIsNkNBQTJCO0FBQzNCLGdEQUE4QjtBQUM5QiwwQ0FBd0I7QUFDeEIsZ0RBQThCO0FBQzlCLDZDQUEyQjtBQUMzQixnREFBOEI7QUFDOUIsNENBQTBCO0FBQzFCLDBDQUF3QjtBQUN4QixrREFBZ0M7QUFDaEMsOENBQTRCO0FBQzVCLDJDQUF5QjtBQUN6QixpREFBK0I7QUFDL0IsOENBQTRCO0FBQzVCLDBDQUF3QjtBQUN4QiwwQ0FBd0I7QUFDeEIsNENBQTBCIn0=
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7OztBQUFBLGdEQUE4QjtBQUM5Qiw2Q0FBMEI7QUFDMUIsZ0RBQTZCO0FBQzdCLDRDQUF5QjtBQUN6QiwyQ0FBd0I7QUFDeEIsMkNBQXdCO0FBQ3hCLDBDQUF1QjtBQUN2QiwyQ0FBd0I7QUFDeEIsd0NBQXFCO0FBQ3JCLDZDQUEwQjtBQUMxQixnREFBNkI7QUFDN0IsMENBQXVCO0FBQ3ZCLGdEQUE2QjtBQUM3Qiw2Q0FBMEI7QUFDMUIsZ0RBQTZCO0FBQzdCLDRDQUF5QjtBQUN6QixrREFBK0I7QUFDL0IsOENBQTJCO0FBQzNCLDJDQUF3QjtBQUN4QixpREFBOEI7QUFDOUIsOENBQTJCO0FBQzNCLDBDQUF1QjtBQUN2QiwwQ0FBdUI7QUFDdkIsNENBQXlCIn0=

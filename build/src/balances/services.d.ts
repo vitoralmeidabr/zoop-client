@@ -16,8 +16,8 @@ export declare const getHistoryBalance: (marketplace: IMarketplace, balanceId: s
 /**
  * Listar histórico de lançamentos de conta por seller
  */
-export declare const getHistoryBalanceBySeller: (marketplace: IMarketplace, sellerId: string, query?: IBalanceQuery | undefined) => Promise<import("axios").AxiosResponse<IResponse<unknown>, unknown>>;
+export declare const getHistoryBalanceBySeller: (marketplace: IMarketplace, sellerId: string, query?: IBalanceQuery) => Promise<import("axios").AxiosResponse<IResponse<unknown>, unknown>>;
 /**
  * Listar histórico de lançamentos de conta por seller
  */
-export declare const getHistoryBalanceByBuyer: (marketplace: IMarketplace, buyerId: string, query?: IBalanceQuery | undefined) => Promise<import("axios").AxiosResponse<IResponse<unknown>, unknown>>;
+export declare const getHistoryBalanceByBuyer: (marketplace: IMarketplace, buyerId: string, query?: IBalanceQuery) => Promise<import("axios").AxiosResponse<IResponse<unknown>, unknown>>;

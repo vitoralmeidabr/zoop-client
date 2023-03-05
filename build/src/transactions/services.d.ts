@@ -24,11 +24,11 @@ export declare const createPixTransaction: (marketplace: IMarketplace, body: IPi
 /**
  * Listar transações do marketplace
  */
-export declare const getTransactions: (marketplace: IMarketplace, query?: IQueryTransaction | undefined) => Promise<import("axios").AxiosResponse<IResponse<IResponseTransaction>, unknown>>;
+export declare const getTransactions: (marketplace: IMarketplace, query?: IQueryTransaction) => Promise<import("axios").AxiosResponse<IResponse<IResponseTransaction>, unknown>>;
 /**
  * Listar transações por vendedor
  */
-export declare const getTransactionsBySeller: (marketplace: IMarketplace, selleId: string, query?: IQueryTransaction | undefined) => Promise<import("axios").AxiosResponse<IResponse<IResponseTransaction>, unknown>>;
+export declare const getTransactionsBySeller: (marketplace: IMarketplace, selleId: string, query?: IQueryTransaction) => Promise<import("axios").AxiosResponse<IResponse<IResponseTransaction>, unknown>>;
 /**
  * Listar detalhes de transação pelo identificador
  */
@@ -36,11 +36,11 @@ export declare const getTransaction: (marketplace: IMarketplace, transactionId: 
 /**
  * Alterar detalhes de transação pelo identificador
  */
-export declare const updateTransaction: (marketplace: IMarketplace, transactionId: string, description?: string | undefined, metadata?: IMetadata | undefined) => Promise<import("axios").AxiosResponse<IResponseTransaction, unknown>>;
+export declare const updateTransaction: (marketplace: IMarketplace, transactionId: string, description?: string, metadata?: IMetadata) => Promise<import("axios").AxiosResponse<IResponseTransaction, unknown>>;
 /**
  * Estornar transação cartão não presente
  */
-export declare const chargebackTransaction: (marketplace: IMarketplace, transactionId: string, sellerId: string, amount: number, rules?: IMetadata | undefined) => Promise<import("axios").AxiosResponse<IResponseTransaction, unknown>>;
+export declare const chargebackTransaction: (marketplace: IMarketplace, transactionId: string, sellerId: string, amount: number, rules?: IMetadata) => Promise<import("axios").AxiosResponse<IResponseTransaction, unknown>>;
 /**
  * Disponibilizar link carta de cancelamento
  */

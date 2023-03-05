@@ -4,7 +4,7 @@ import { ApplicationType, ICredentials, IPassword, IPermissions, IUser } from '.
 /**
  * Criar usuário Dashboard e Minha Conta
  */
-export declare const createUser: (marketplace: IMarketplace, body: IUser, invite?: boolean | undefined) => Promise<import("axios").AxiosResponse<IUser, unknown>>;
+export declare const createUser: (marketplace: IMarketplace, body: IUser, invite?: boolean) => Promise<import("axios").AxiosResponse<IUser, unknown>>;
 /**
  * Listar usuário do Dashboard e Minha Conta pelo identificador
  */
@@ -20,7 +20,7 @@ export declare const createNewPassword: (marketplace: IMarketplace, userId: stri
 /**
  * Criar nova senha para usuário Dashboard e Minha Conta
  */
-export declare const forgotPassword: (marketplace: IMarketplace, username: string, application?: ApplicationType | undefined) => Promise<import("axios").AxiosResponse<unknown, unknown>>;
+export declare const forgotPassword: (marketplace: IMarketplace, username: string, application?: ApplicationType) => Promise<import("axios").AxiosResponse<unknown, unknown>>;
 /**
  * Criar permissão para usuário do Dashboard e Minha Conta
  */

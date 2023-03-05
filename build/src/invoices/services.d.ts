@@ -20,7 +20,7 @@ export declare const chargebackInvoice: (marketplace: IMarketplace, invoiceId: s
 /**
  * Listar todas as faturas de um marketplace
  */
-export declare const getInvoices: (marketplace: IMarketplace, query?: IQuery | undefined) => Promise<import("axios").AxiosResponse<IResponse<IInvoice>, unknown>>;
+export declare const getInvoices: (marketplace: IMarketplace, query?: IQuery) => Promise<import("axios").AxiosResponse<IResponse<IInvoice>, unknown>>;
 /**
  * Listar os detalhes de uma fatura pelo identificador
  */
@@ -28,4 +28,4 @@ export declare const getInvoice: (marketplace: IMarketplace, invoiceId: string) 
 /**
  * Listar faturas associadas a um vendedor pelo identificador
  */
-export declare const getInvoiceBySeller: (marketplace: IMarketplace, sellerId: string, query?: IQuery | undefined) => Promise<import("axios").AxiosResponse<IInvoice, unknown>>;
+export declare const getInvoiceBySeller: (marketplace: IMarketplace, sellerId: string, query?: IQuery) => Promise<import("axios").AxiosResponse<IInvoice, unknown>>;

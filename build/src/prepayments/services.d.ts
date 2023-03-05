@@ -13,11 +13,11 @@ export declare const getPrePayments: (marketplace: IMarketplace) => Promise<impo
 /**
  * Listagem de antecipações do Seller
  */
-export declare const getPrePaymentsBySeller: (marketplace: IMarketplace, sellerId: string, query?: IPrePaymentQuery | undefined) => Promise<import("axios").AxiosResponse<readonly IPrePayment[] | IResponse<IPrePayment>, unknown>>;
+export declare const getPrePaymentsBySeller: (marketplace: IMarketplace, sellerId: string, query?: IPrePaymentQuery) => Promise<import("axios").AxiosResponse<readonly IPrePayment[] | IResponse<IPrePayment>, unknown>>;
 /**
  * Recupera informações da agenda futura do Seller
  */
-export declare const getFuturePrePaymentsBySeller: (marketplace: IMarketplace, sellerId: string, query?: IPrePayment | undefined) => Promise<import("axios").AxiosResponse<IFuturePrePayment, unknown>>;
+export declare const getFuturePrePaymentsBySeller: (marketplace: IMarketplace, sellerId: string, query?: IPrePayment) => Promise<import("axios").AxiosResponse<IFuturePrePayment, unknown>>;
 /**
  * Detalhe de antecipação
  */

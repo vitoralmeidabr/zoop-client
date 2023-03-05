@@ -4,7 +4,7 @@ import { IFutureTransferQuery, IReceivingPolicy, ITransferQuery } from './interf
 /**
  * Listar transferências por marketplace
  */
-export declare const getTransfers: (marketplace: IMarketplace, query?: ITransferQuery | undefined) => Promise<import("axios").AxiosResponse<unknown, unknown>>;
+export declare const getTransfers: (marketplace: IMarketplace, query?: ITransferQuery) => Promise<import("axios").AxiosResponse<unknown, unknown>>;
 /**
  * Recuperar detalhes de transferência
  */
@@ -24,7 +24,7 @@ export declare const getTransferOnTransactions: (marketplace: IMarketplace, tran
 /**
  * Listar lançamentos futuros por seller
  */
-export declare const getFutureTransfers: (marketplace: IMarketplace, sellerId: string, query?: IFutureTransferQuery | undefined) => Promise<import("axios").AxiosResponse<IResponse<unknown>, unknown>>;
+export declare const getFutureTransfers: (marketplace: IMarketplace, sellerId: string, query?: IFutureTransferQuery) => Promise<import("axios").AxiosResponse<IResponse<unknown>, unknown>>;
 /**
  * Recuperar política de recebimento por seller
  */
